@@ -9,5 +9,5 @@ document.onload(async () => {
     .then((data) => {
         msg = data
     })
-    document.getElementById('msg').innerHTML = msg.replace('${name}', name)
+    document.getElementById('msg').innerHTML = msg.replaceAll('${name}', name)
 })
